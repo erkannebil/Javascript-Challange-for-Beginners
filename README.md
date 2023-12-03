@@ -1,19 +1,7 @@
-# Sprint 1 Challenge - Popüler Sanatçılar
-
-**Başlamadan önce bu talimatları dikkatlice okuyun ve tam olarak ne beklendiğini anlayın.**
-
-Bugünkü çalışmada amacımız, bu hafta öğrenilen kavram ve tekniklerin somut bir projede uygulamanıza olanak sağlamaktır. Şimdiye kadar, git ve JavaScript'e giriş kavramlarını kapsayan; git, değişken tanımlama, koşullar, döngüler, işlevler, diziler ve nesneler üzerine odaklandınız. Bu haftaki çalışmanızda, index.js dosyasındaki görevleri tamamlayarak bu konuları ne kadar anladığınızı göstereceksiniz.
-
-Bu çalışma kendiniz için bireysel bir değerlendirme olacaktır. Başkalarından yardım alabilirsiniz ama en sonunda gerekli olan isterleri kendi başınıza da yapması beklenmektedir. Sprint 1 boyunca anlatılan bilgileri kullanarak yapabilirsiniz. Önceki projelerinizde yaptıklarınızın benzerlerini yaparak challenge'ı %100 olarak tamamlayabilirsiniz.
-
-
+# Challenge - Popüler Sanatçılar
 ## Giriş
 
 Bu challange'da, "En popüler fenomenler" web sayfası oluşturmak için sosyal medya profillerine ait bir veri seti kullanacaksınız. Bu veriler, [Kaggle](https://www.kaggle.com/datasets/medaxone/top-100-social-media-profiles) adresindeki "En iyi 100 sosyal medya profili" başlıklı Instagram, Twitter, YouTube, Twitch ve TikTok kullanıcıları listesinden gelmektedir. Çalışmayı kolaylaştırmak için, bu verilerden YouTube hariç her birinden ilk 5 profil alınacak şekilde, toplam 20 fenemen profili kullanılacaktır.
-
-### Commits
-
-Görevleri yaptıkça commit etmeyi unutmayınız.
 
 ## Talimatlar
 
@@ -44,14 +32,6 @@ Açılan ikinci terminalde `npm start` yazıp çalıştırın.
 
 Bir terminal ekranında testleri çalıştırırken bir diğerinde ise debug yapabileceksin. Kodlarınızda güncelleme yaptıkça ilerlemeyi kontrol için `console.log`u kullanın.
 ![alt text](assets/debug_terminal.png "Terminal buna benzemeli")
-
-### Görev 3: Bonus Çalışma
-
-Sana verilen gün sonu projesindeki görevleri tamamladıktan sonra bonus çalışmaları yapabilirsin.
-
-## Proje Teslim Etme Adımları
-
-Verilen görevi tamamladıktan sonra [Workintech Platformu](https://app.workintech.com.tr)'nda (app.workintech.com.tr) `Sprint 1>Gün 4`'ün sonuna eklenmiş olan "`Görev: Sprint 1 Challenge Projesini Buraya Yükle`" içeriğini açıp. GitHub hesabınızda oluşturduğunuz repo'nun adresini buraya ekleyiniz. Eğitmenlerimiz, gün projenizi kontrol edecek ve ertesi gün size slack üzerinden geribildirimde bulunacaklar.
 
 ## Kaynaklar
 [W3 Schools - JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp)
