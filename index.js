@@ -187,7 +187,7 @@ Aşağıdakileri yapmak için profilListesi'ni kullanın:
 1. fenomen dizisini bir parametreden argüman olarak alın
 2. Parametre dizisini kopyalayarak yeni bir dizi oluşturun
 3. Yeni dizinin üzerinde dolaşın ve dizinin her bir indeksinde yalnızca fenomenin adına eşit olacak şekilde güncelleyin
-🌟 Dönüş ÖRNEĞİ: ["Instagram", "Cristiano Ronaldo", "Kylie"....]
+🌟 Dönüş ÖRNEĞİ: ["Instsagram", "Cristiano Ronaldo", "Kylie"....]
 */
 
 function profilListesi(/*kod*/) {
