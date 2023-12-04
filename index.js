@@ -242,9 +242,19 @@ Aşağıdakileri yapmak için fenomenEkle'i kullanın:
 
 ÖRNEK: fenomenEkle(fenomenler, 6, "Workintech", 10000000, 2022, "Instagram") çağrıldığında dizinin sonuna yukarıdaki nesne en sona eklenerek yeni fenomenler dizisini döndürmelidir. */
 
-function fenomenEkle(/*kod*/) {
-  /*kod*/
+function fenomenEkle(dizi, num, profile, followers, posts, platform) {
+  const newArray = dizi.slice(); // splice() -> slice() değiştirildi
+  const newPart = {
+    "number": num,
+    "profile": profile,
+    "followers": followers,
+    "posts": posts,
+    "platform": platform
+  };
+  newArray.push(newPart); // newArray = newPart.push() -> newArray.push(newPart) olarak değiştirildi
+  return newArray;
 }
+fenomenEkle(fenomenler,"6","Workintech","10000000","2022","Instagram");
 
 
 /* Görev 7:
@@ -255,8 +265,15 @@ Aşağıdakileri yapmak için enFenomenler'yi kullanın:
 ÖRNEK: enFenomenler(fenomenler) çağrıldığında sonuç olarak ["Instagram", "Cristiano Ronaldo", ... "Khabane lame"] dönemelidir
 */
 
-function enFenomenler(/*kod*/) {
-  /*kod*/
+function enFenomenler(dizi) {
+  let newArray=[];
+  for( let i=0; i< dizi.length ; i++){
+      if(dizi[i].followers  >= 100000000){
+        newArray.push(dizi[i].profile);
+      }
+  }
+  return newArray;
+ 
 }
 
 
@@ -269,10 +286,16 @@ Aşağıdakileri yapmak için fenomenGonderimSayisi'nı kullanın:
 ÖRNEK: fenomenGonderimSayisi(fenomenler, 'Will Smith') çağrıldığında "136" dönmelidir
 */
 
-function fenomenGonderimSayisi(/*kod*/) {
-  /*kod*/
+function fenomenGonderimSayisi(fenomenler, profilAdi) {
+  for (let i = 0; i < fenomenler.length; i++) {
+    if (fenomenler[i].profile === profilAdi) {
+      return fenomenler[i].posts;
+    }
+  }
+  // Eğer fenomen bulunamazsa -1 veya başka bir değer döndürebilirsiniz.
+  return "Fenomen bulunamadı";
 }
-
+fenomenGonderimSayisi(fenomenler,'Will Smith');
 
 
 /* Görev 9:
@@ -286,9 +309,29 @@ Not: Gönderi sayısı belli olmayan (NA) hesaba katmayın.
 Örnek: platformaGoreCokGonderiYapanFenomen(fenomenler, 'TikTok') çağrıldığında "charli damelio" dönmelidir
 */
 
-function platformaGoreCokGonderiYapanFenomen(/*kod*/) {
-  /*kod*/
+function platformaGoreCokGonderiYapanFenomen(fenomenler, platformAdi) {
+  let enCokGonderiYapanFenomen = null;
+  let enCokGonderiSayisi = -1;
+
+  for (let i = 0; i < fenomenler.length; i++) {
+    const fenomen = fenomenler[i];
+
+    // Gönderi sayısı belli olmayanları (NA) hesaba katma
+    if (fenomen.platform === platformAdi && fenomen.posts !== 'NA') {
+      const gonderiSayisi = parseInt(fenomen.posts);
+
+      if (gonderiSayisi > enCokGonderiSayisi) {
+        enCokGonderiSayisi = gonderiSayisi;
+        enCokGonderiYapanFenomen = fenomen.profile;
+      }
+    }
+  }
+  return enCokGonderiYapanFenomen;
 }
+
+
+
+
 
 
 
